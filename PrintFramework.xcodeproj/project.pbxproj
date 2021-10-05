@@ -10,6 +10,7 @@
 		BD7CB692270C883E00FEA7B7 /* PrintFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7CB688270C883D00FEA7B7 /* PrintFramework.framework */; };
 		BD7CB697270C883E00FEA7B7 /* PrintFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7CB696270C883E00FEA7B7 /* PrintFrameworkTests.swift */; };
 		BD7CB699270C883E00FEA7B7 /* PrintFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = BD7CB68B270C883D00FEA7B7 /* PrintFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD7CB6A5270C88CC00FEA7B7 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7CB6A4270C88CC00FEA7B7 /* Print.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		BD7CB691270C883E00FEA7B7 /* PrintFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrintFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7CB696270C883E00FEA7B7 /* PrintFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintFrameworkTests.swift; sourceTree = "<group>"; };
 		BD7CB698270C883E00FEA7B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD7CB6A4270C88CC00FEA7B7 /* Print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Print.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				BD7CB68B270C883D00FEA7B7 /* PrintFramework.h */,
 				BD7CB68C270C883D00FEA7B7 /* Info.plist */,
+				BD7CB6A4270C88CC00FEA7B7 /* Print.swift */,
 			);
 			path = PrintFramework;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					BD7CB687270C883D00FEA7B7 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					BD7CB690270C883E00FEA7B7 = {
 						CreatedOnToolsVersion = 12.3;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD7CB6A5270C88CC00FEA7B7 /* Print.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		BD7CB69D270C883E00FEA7B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = walmart.PrintFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		BD7CB69E270C883E00FEA7B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -387,6 +395,7 @@
 		BD7CB6A0270C883E00FEA7B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PrintFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +413,7 @@
 		BD7CB6A1270C883E00FEA7B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PrintFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
