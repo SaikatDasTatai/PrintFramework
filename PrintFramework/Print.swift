@@ -10,6 +10,7 @@ import Foundation
 public class Analytics {
     public init() {}
 
+    //Add
     public func log(message: String) {
         print("Log message: ", message)
     }
